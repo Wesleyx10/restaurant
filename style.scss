@@ -1,0 +1,1113 @@
+* {
+  padding: 0;
+  margin: 0;
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+}
+:root {
+  --main-font: Inter tight;
+  --main-color: teal;
+  --header-font: playfair display;
+  --footer-bg-color: #474747;
+  --div-bg: #f9f9f7;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  gap: 9rem;
+  width: 100%;
+
+  height: 100%;
+  overflow-x: hidden;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: #e2e3de;
+    width: 100%;
+    padding: 1rem;
+    .bars {
+      display: none;
+    }
+    img {
+      width: 250px;
+    }
+    .links {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      a {
+        text-decoration: none;
+        color: black;
+        font-family: var(--main-font);
+        font-size: 18px;
+      }
+      #hm {
+        background-color: #dbdfd0;
+        padding: 5px 14px;
+        border-radius: 20px;
+      }
+    }
+    #book {
+      border: 2px solid black;
+      padding: 10px 18px;
+      border-radius: 30px;
+      font-size: 18px;
+      text-decoration: none;
+      color: black;
+      font-family: var(--main-font);
+    }
+    #book:hover {
+      transition: all 0.5s;
+      background-color: var(--main-color);
+      color: white;
+      border: none;
+    }
+  }
+  .home {
+    background-image: url(https://images.pexels.com/photos/1640770/pexels-photo-1640770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 0rem;
+    gap: 1rem;
+    margin-top: 5.1rem;
+    #best {
+      font-family: var(--header-font);
+      font-size: 5rem;
+      font-weight: 500;
+      text-align: center;
+    }
+    #disc {
+      font-family: var(--main-font);
+      text-align: center;
+    }
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      a {
+        font-family: var(--main-font);
+        text-decoration: none;
+        color: black;
+      }
+      #boo {
+        background-color: var(--main-color);
+        padding: 1rem;
+        color: white;
+        border-radius: 30px;
+      }
+      #boo:hover {
+        transition: all 0.5s;
+        background-color: transparent;
+        border: 1.4px solid black;
+        color: black;
+      }
+      #exp {
+        border: 1.4px solid black;
+        padding: 0.9rem;
+        border-radius: 30px;
+      }
+      #exp:hover {
+        transition: all 0.5s;
+        background-color: var(--main-color);
+        color: white;
+        border: none;
+      }
+    }
+  }
+}
+.browse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  #main {
+    font-family: var(--header-font);
+    font-size: 3rem;
+  }
+  .dishes {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    #dish {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      font-family: var(--main-font);
+      border: 1.5px solid #dbdfd0;
+      padding: 2rem;
+      border-radius: 10px;
+      #mug {
+        background-color: #f3f3f0;
+        padding: 1rem;
+        font-size: 26px;
+        border-radius: 50%;
+      }
+      #heading {
+        font-weight: 500;
+        font-size: 20px;
+      }
+      #era {
+        font-size: 13px;
+        font-weight: 300;
+        text-align: center;
+      }
+      a {
+        text-decoration: none;
+        color: var(--main-color);
+        font-size: 15px;
+      }
+      a:hover {
+        transition: all 0.5s;
+        color: white;
+        background-color: var(--main-color);
+        padding: 0.5rem;
+        border-radius: 15px;
+        border: none;
+      }
+    }
+  }
+}
+.visit {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  justify-content: center;
+  background-color: #f9f9f7;
+  padding: 5rem 0rem 7rem 0rem;
+  .image {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    img {
+      width: 450px;
+    }
+    #come {
+      background-color: var(--footer-bg-color);
+      color: white;
+      padding: 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+      border-radius: 5px;
+      font-family: var(--main-font);
+      position: absolute;
+      right: -3rem;
+      bottom: -2rem;
+      #icon {
+        font-size: 12px;
+        font-weight: 300;
+        display: flex;
+        gap: 0.6rem;
+      }
+    }
+  }
+  .textlink {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+    span {
+      font-family: var(--header-font);
+      font-size: 40px;
+      font-weight: 500;
+    }
+    #our {
+      font-family: var(--main-font);
+    }
+    #at {
+      font-family: var(--main-font);
+      font-weight: 300;
+      font-size: 15px;
+    }
+    a {
+      font-family: var(--main-font);
+      text-decoration: none;
+      color: black;
+      border: 2px solid black;
+      padding: 0.7rem;
+      width: 23%;
+      white-space: nowrap;
+      border-radius: 30px;
+    }
+    a:hover {
+      transition: all 0.5s;
+      background-color: var(--main-color);
+      color: white;
+      border: none;
+    }
+  }
+}
+.offer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  #offer {
+    font-family: var(--header-font);
+    font-size: 40px;
+    font-weight: 500;
+  }
+  .detail {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    #what {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      font-family: var(--main-font);
+      img {
+        width: 250px;
+      }
+      span {
+        font-weight: 600;
+        font-size: 19px;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+.delivery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+  background-color: #f9f9f7;
+  padding: 4rem 0rem;
+  .image {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    #fir {
+      width: 300px;
+    }
+    #secondimg {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      #scd {
+        width: 200px;
+      }
+    }
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    #text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      span {
+        font-family: var(--header-font);
+        font-size: 40px;
+        font-weight: 500;
+      }
+      p {
+        font-family: var(--main-font);
+        font-weight: 300;
+      }
+    }
+    #icontext {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      font-family: var(--main-font);
+      font-weight: 500;
+      #icon {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        #icons {
+          background-color: var(--main-color);
+          padding: 0.5rem;
+          border: none;
+          border-radius: 50%;
+          color: white;
+        }
+      }
+    }
+  }
+}
+.customers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  #cus {
+    font-family: var(--header-font);
+    font-size: 40px;
+    font-weight: 500;
+  }
+  .review {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    #comment {
+      display: flex;
+      flex-direction: column;
+      font-family: var(--main-font);
+      gap: 2rem;
+      background-color: #f9f9f7;
+      padding: 1.5rem;
+      #fst {
+        color: var(--main-color);
+        font-size: 20px;
+        font-weight: 500;
+      }
+      p {
+        font-weight: 300;
+      }
+      #img {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        img {
+          width: 30px;
+        }
+        #name {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          font-weight: 500;
+          #loc {
+            font-weight: 300;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: #f9f9f7;
+  padding: 5rem;
+  .heads {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 30rem;
+    span {
+      font-family: var(--header-font);
+      font-size: 40px;
+      white-space: nowrap;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      background-color: var(--main-color);
+      padding: 1rem 1.5rem;
+      font-family: var(--main-font);
+      border-radius: 30px;
+      white-space: nowrap;
+    }
+  }
+  .articles {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--main-font);
+    #burger {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      gap: 1rem;
+      border-radius: 10px;
+      transition: transform 1s ease;
+      cursor: pointer;
+      img {
+        width: 550px;
+      }
+      #text {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        span {
+          font-weight: 500;
+        }
+        p {
+          font-size: 14px;
+          font-weight: 300;
+        }
+        small {
+          font-weight: 300;
+          font-size: 12px;
+        }
+      }
+    }
+    #burger:hover {
+      transform: scale(0.9);
+    }
+    #fries {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      #cont {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: white;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+        img {
+          width: 235px;
+        }
+        #text {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          padding: 1rem;
+          small {
+            font-size: 12px;
+            font-weight: 300;
+          }
+          span {
+            font-weight: 500;
+          }
+        }
+      }
+      #cont:hover {
+        transform: scale(1.1);
+      }
+    }
+    #chicken {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      #conts {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: white;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+
+        border-radius: 10px;
+        img {
+          width: 250px;
+        }
+        #text {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          padding: 1rem;
+          small {
+            font-size: 12px;
+            font-weight: 300;
+          }
+          span {
+            font-weight: 500;
+          }
+        }
+      }
+      #conts:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+.footer {
+  background-color: var(--footer-bg-color);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--main-font);
+  gap: 5rem;
+  #copy {
+    color: #dbdfd0;
+    font-size: 13px;
+    font-weight: 200;
+  }
+  .heading {
+    display: flex;
+    gap: 5rem;
+    .first {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      color: white;
+      span {
+        color: #dbdfd0;
+        font-size: 15px;
+      }
+      img {
+        width: 220px;
+      }
+      .logos {
+        display: flex;
+        gap: 0.5rem;
+
+        #sm {
+          background-color: var(--main-color);
+          padding: 0.5rem;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+      }
+    }
+    .pages {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      color: white;
+      font-size: 13px;
+      span {
+        font-weight: 500;
+        font-size: 15px;
+      }
+      a {
+        text-decoration: none;
+        color: #dbdfd0;
+      }
+    }
+    .utility {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      color: white;
+      font-size: 13px;
+      span {
+        font-weight: 500;
+        font-size: 15px;
+      }
+      a {
+        text-decoration: none;
+        color: #dbdfd0;
+      }
+    }
+    .textimage {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      color: white;
+      font-weight: 500;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  body {
+    gap: 0rem;
+    overflow-x: visible;
+  }
+  .head {
+    gap: 0rem;
+    .nav {
+      gap: 4rem;
+
+      flex-direction: column;
+      padding: 2rem 0rem;
+
+      background-color: white;
+      .bars {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 22px;
+
+        #close {
+          display: none;
+        }
+      }
+      .links {
+        flex-direction: column;
+        margin-top: 3rem;
+        display: none;
+      }
+      img {
+        width: 120px;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+      }
+      #book {
+        display: none;
+      }
+    }
+    .home {
+      margin-top: 0;
+      #best {
+        font-size: 2rem;
+      }
+      #disc {
+        font-size: 13px;
+      }
+      .link {
+        gap: 0.5rem;
+        a {
+          font-size: 10px;
+        }
+        #boo {
+          padding: 0.4rem;
+        }
+        #exp {
+          padding: 0.3rem;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .browse {
+    gap: 1rem;
+    #main {
+      font-size: 2.2rem;
+    }
+    .dishes {
+      flex-direction: column;
+    }
+  }
+  .visit {
+    flex-direction: column;
+    gap: 5rem;
+    .image {
+      img {
+        width: 280px;
+      }
+      #come {
+        padding: 0.7rem;
+        font-size: 10px;
+        right: -1rem;
+        bottom: -4rem;
+        #icon {
+          font-size: 10px;
+        }
+        span {
+          font-size: 10px;
+        }
+      }
+    }
+    .textlink {
+      align-items: center;
+      span {
+        font-size: 30px;
+      }
+      #our {
+        font-size: 12px;
+        text-align: center;
+      }
+      #at {
+        font-size: 10px;
+        text-align: center;
+      }
+      a {
+        font-size: 10px;
+        padding: 0.5rem;
+        width: 20%;
+      }
+    }
+  }
+  .offer {
+    #offer {
+      font-size: 30px;
+    }
+    .detail {
+      flex-direction: column;
+      gap: 2rem;
+      #what {
+        gap: 0.5rem;
+      }
+    }
+  }
+  .delivery {
+    flex-direction: column;
+    gap: 1rem;
+    .image {
+      align-items: center;
+      gap: 0.7rem;
+      #fir {
+        width: 150px;
+      }
+      #secondimg {
+        gap: 0.7rem;
+        #scd {
+          width: 100px;
+        }
+      }
+    }
+    .text {
+      gap: 1rem;
+      align-items: center;
+      #text {
+        span {
+          text-align: center;
+          font-size: 30px;
+        }
+        p {
+          text-align: center;
+          font-size: 13px;
+        }
+      }
+      #icontext {
+        font-size: 14px;
+      }
+    }
+  }
+  .customers {
+    gap: 1rem;
+    #cus {
+      font-size: 30px;
+      text-align: center;
+    }
+    .review {
+      flex-direction: column;
+    }
+  }
+  .blog {
+    gap: 2rem;
+    .heads {
+      flex-direction: column;
+      gap: 1rem;
+      span {
+        font-size: 30px;
+      }
+      a {
+        font-size: 12px;
+        padding: 0.8rem;
+      }
+    }
+    .articles {
+      flex-direction: column;
+      gap: 2rem;
+      #burger {
+        img {
+          width: 250px;
+        }
+        p {
+          display: none;
+        }
+      }
+      #burger:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .footer {
+    #copy {
+      font-size: 10px;
+    }
+    .heading {
+      flex-direction: column;
+      gap: 2rem;
+      .utility {
+        display: none;
+      }
+      .first {
+        img {
+          width: 180px;
+        }
+        .logos {
+          font-size: 12px;
+        }
+      }
+      .textimage {
+        img {
+          width: 120px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 510px) and (max-width: 835px) {
+  body {
+    gap: 2rem;
+    overflow-x: visible;
+  }
+  .head {
+    gap: 0rem;
+    .nav {
+      gap: 3rem;
+      position: static;
+      align-items: center;
+      padding: 2rem 0rem;
+      background-color: white;
+      .links {
+      }
+      img {
+        width: 140px;
+      }
+      #book {
+      }
+    }
+    .home {
+      margin-top: 0;
+      #best {
+        font-size: 4rem;
+      }
+      #disc {
+        font-size: 23px;
+      }
+      .link {
+        a {
+          font-size: 20px;
+        }
+        #boo {
+          padding: 1rem;
+        }
+        #exp {
+          padding: 0.8rem;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .browse {
+    gap: 1rem;
+    #main {
+      font-size: 4rem;
+    }
+    .dishes {
+      flex-direction: column;
+      #dish {
+        padding: 3rem;
+        #mug {
+          font-size: 30px;
+        }
+        #heading {
+          font-size: 30px;
+        }
+        #era {
+          font-size: 20px;
+        }
+        a {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .visit {
+    flex-direction: column;
+    gap: 6rem;
+    .image {
+      img {
+        width: 400px;
+      }
+      #come {
+        padding: 2rem;
+        font-size: 30px;
+        right: -1rem;
+        bottom: -4rem;
+        #icon {
+          font-size: 13px;
+        }
+        span {
+          font-size: 13px;
+        }
+      }
+    }
+    .textlink {
+      align-items: center;
+      gap: 2rem;
+      span {
+        font-size: 50px;
+      }
+      #our {
+        font-size: 20px;
+        text-align: center;
+      }
+      #at {
+        font-size: 17px;
+        text-align: center;
+      }
+      a {
+        font-size: 17px;
+        padding: 0.5rem;
+        width: 20%;
+      }
+    }
+  }
+  .offer {
+    #offer {
+      font-size: 50px;
+    }
+    .detail {
+      flex-direction: column;
+      gap: 2rem;
+      #what {
+        gap: 0.5rem;
+        img {
+          width: 350px;
+        }
+        span {
+          font-size: 23px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .delivery {
+    flex-direction: column;
+    gap: 1rem;
+    .image {
+      align-items: center;
+      gap: 0.7rem;
+      #fir {
+        width: 220px;
+      }
+      #secondimg {
+        gap: 0.7rem;
+        #scd {
+          width: 150px;
+        }
+      }
+    }
+    .text {
+      gap: 1rem;
+      align-items: center;
+      #text {
+        gap: 1rem;
+        span {
+          text-align: center;
+          font-size: 50px;
+        }
+        p {
+          text-align: center;
+          font-size: 20px;
+        }
+      }
+      #icontext {
+        font-size: 21px;
+      }
+    }
+  }
+  .customers {
+    gap: 1rem;
+    #cus {
+      font-size: 50px;
+      text-align: center;
+    }
+    .review {
+      flex-direction: column;
+      #comment {
+        padding: 2rem;
+        #fst {
+          font-size: 30px;
+        }
+        p {
+          font-size: 20px;
+        }
+        #img {
+          img {
+            width: 50px;
+          }
+          #name {
+            font-size: 20px;
+            #loc {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .blog {
+    gap: 2rem;
+    .heads {
+      flex-direction: column;
+      gap: 1rem;
+      span {
+        font-size: 50px;
+      }
+      a {
+        font-size: 18px;
+        padding: 1rem;
+      }
+    }
+    .articles {
+      flex-direction: column;
+      gap: 2rem;
+      #burger {
+        #text {
+          span {
+            max-width: 200px;
+          }
+        }
+        img {
+          width: 300px;
+        }
+        p {
+          display: none;
+        }
+      }
+
+      #burger:hover {
+        transform: scale(1.1);
+      }
+      #fries {
+        #cont {
+          img {
+            width: 300px;
+          }
+        }
+      }
+      #chicken {
+        #conts {
+          img {
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    #copy {
+      font-size: 10px;
+    }
+    .heading {
+      gap: 2rem;
+      .utility {
+        display: none;
+      }
+      .first {
+        img {
+          width: 200px;
+        }
+        .logos {
+          font-size: 12px;
+        }
+      }
+      .textimage {
+        img {
+          width: 140px;
+        }
+      }
+    }
+  }
+}
