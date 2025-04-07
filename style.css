@@ -628,7 +628,7 @@ body {
 
 @media only screen and (max-width: 500px) {
   body {
-    gap: 0rem;
+    gap: 2rem;
     overflow-x: visible;
   }
   .head {
