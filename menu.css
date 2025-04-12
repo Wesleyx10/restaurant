@@ -76,224 +76,187 @@ body {
   border: none;
 }
 
-.visit {
+.menu {
+  margin-top: 7rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 8rem;
   justify-content: center;
-  background-color: #f9f9f7;
-  padding: 5rem 0rem 7rem 0rem;
-  margin-top: 5rem;
-}
-.visit .image {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-.visit .image img {
-  width: 450px;
-}
-.visit .image #come {
-  background-color: var(--footer-bg-color);
-  color: white;
-  padding: 2rem;
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
-  border-radius: 5px;
-  font-family: var(--main-font);
-  position: absolute;
-  right: -3rem;
-  bottom: -2rem;
-}
-.visit .image #come #icon {
-  font-size: 12px;
-  font-weight: 300;
-  display: flex;
-  gap: 0.6rem;
-}
-.visit .textlink {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.visit .textlink span {
-  font-family: var(--header-font);
-  font-size: 40px;
-  font-weight: 500;
-}
-.visit .textlink #our {
-  font-family: var(--main-font);
-}
-.visit .textlink #at {
-  font-family: var(--main-font);
-  font-weight: 300;
-  font-size: 15px;
-}
-
-.authentic {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  font-family: var(--main-font);
-}
-.authentic img {
-  width: 100%;
-}
-.authentic .percs {
-  display: flex;
-  align-items: center;
   gap: 3rem;
-  padding: 2rem;
 }
-.authentic .percs #cuisine {
+.menu .head {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
-.authentic .percs #cuisine #bar {
-  font-size: 25px;
+.menu .head span {
+  font-family: var(--header-font);
+  font-size: 60px;
+  font-weight: 500;
+}
+.menu .head p {
+  font-family: var(--main-font);
+  font-size: 17px;
+  text-align: center;
+  font-weight: 300;
+}
+.menu .link {
+  display: flex;
+  gap: 1rem;
+  font-family: var(--main-font);
+}
+.menu .link a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding: 0.7rem 2.5rem;
+  border: 2px solid #dbdfd0;
+  text-align: center;
+  border-radius: 30px;
+}
+.menu .link a:hover {
+  background-color: var(--main-color);
+  color: white;
+  transition: all 0.5s;
+  border: none;
+}
+.menu .dishes {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  font-family: var(--main-font);
+  margin-top: 1rem;
+}
+.menu .dishes .first-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.menu .dishes .first-row #one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+.menu .dishes .first-row #one img {
+  width: 250px;
+}
+.menu .dishes .first-row #one #text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px solid #dbdfd0;
+  border-top: none;
+  border-radius: 15px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  padding: 2.57rem;
+}
+.menu .dishes .first-row #one #text h5 {
   color: var(--main-color);
 }
-.authentic .percs #cuisine #cuise {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  font-size: 25px;
-  font-weight: 500;
-}
-.authentic .percs #cuisine #cuise #tech {
+.menu .dishes .first-row #one #text span {
   font-size: 15px;
-  font-weight: 300;
-}
-
-.guest {
-  display: flex;
-  align-items: center;
-  gap: 5rem;
-  justify-content: center;
-  background-color: #f9f9f7;
-  padding: 3rem;
-}
-.guest img {
-  width: 460px;
-}
-.guest .texts {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.guest .texts #info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-}
-.guest .texts #info span {
-  font-family: var(--header-font);
-  font-size: 40px;
-}
-.guest .texts #info p {
-  font-family: var(--main-font);
-  font-size: 15px;
-  font-weight: 340;
-}
-.guest .texts #about {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: center;
-}
-.guest .texts #about #first {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-.guest .texts #about #first #no {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-  padding: 2rem 4rem;
-  border: 1.4px solid #dbdfd0;
-  font-family: var(--header-font);
-  font-size: 35px;
-  gap: 0.5rem;
-}
-.guest .texts #about #first #no #tx {
-  font-family: var(--main-font);
-  font-size: 13px;
-}
-.guest .texts #about #second {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-.guest .texts #about #second #no {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-  padding: 2rem 3.2rem;
-  border: 1.4px solid #dbdfd0;
-  font-family: var(--header-font);
-  font-size: 35px;
-  gap: 0.5rem;
-}
-.guest .texts #about #second #no #tx {
-  font-family: var(--main-font);
-  font-size: 13px;
-}
-
-.customers {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-.customers #cus {
-  font-family: var(--header-font);
-  font-size: 40px;
   font-weight: 500;
+  color: black;
 }
-.customers .review {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-.customers .review #comment {
-  display: flex;
-  flex-direction: column;
-  font-family: var(--main-font);
-  gap: 2rem;
-  background-color: #f9f9f7;
-  padding: 1.5rem;
-}
-.customers .review #comment #fst {
-  color: var(--main-color);
-  font-size: 20px;
-  font-weight: 500;
-}
-.customers .review #comment p {
-  font-weight: 300;
-}
-.customers .review #comment #img {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-.customers .review #comment #img img {
-  width: 30px;
-}
-.customers .review #comment #img #name {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  font-weight: 500;
-}
-.customers .review #comment #img #name #loc {
-  font-weight: 300;
+.menu .dishes .first-row #one #text p {
   font-size: 12px;
+  text-align: center;
+  color: black;
+}
+.menu .dishes .second-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.menu .dishes .second-row #two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+.menu .dishes .second-row #two img {
+  width: 250px;
+}
+.menu .dishes .second-row #two #text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px solid #dbdfd0;
+  border-top: none;
+  border-radius: 15px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  padding: 2.57rem;
+}
+.menu .dishes .second-row #two #text h5 {
+  color: var(--main-color);
+}
+.menu .dishes .second-row #two #text span {
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+}
+.menu .dishes .second-row #two #text p {
+  font-size: 12px;
+  text-align: center;
+  color: black;
+}
+
+.delivery {
+  display: flex;
+  align-items: center;
+  gap: 4.5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f7;
+  padding: 3rem 1rem;
+}
+.delivery .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-left: 2.5rem;
+}
+.delivery .text span {
+  font-family: var(--header-font);
+  font-size: 40px;
+  font-weight: 500;
+}
+.delivery .text p {
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 200;
+  text-align: start;
+}
+.delivery .apps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.delivery .apps #row-one {
+  display: flex;
+}
+.delivery .apps #row-one a img {
+  width: 200px;
+}
+.delivery .apps #row-two {
+  display: flex;
+}
+.delivery .apps #row-two a img {
+  width: 240px;
+}
+.delivery .apps #row-three {
+  display: flex;
+}
+.delivery .apps #row-three a img {
+  width: 200px;
 }
 
 .footer {
@@ -410,86 +373,52 @@ body {
   .nav #book {
     display: none;
   }
-  .visit {
-    flex-direction: column;
-    gap: 5rem;
+  .menu {
+    margin-top: 5rem;
+    gap: 2rem;
   }
-  .visit .image img {
-    width: 280px;
+  .menu .head {
+    gap: 0.5rem;
   }
-  .visit .image #come {
-    padding: 0.7rem;
-    font-size: 10px;
-    right: -1rem;
-    bottom: -4rem;
+  .menu .head span {
+    font-size: 45px;
   }
-  .visit .image #come #icon {
-    font-size: 10px;
-  }
-  .visit .image #come span {
-    font-size: 10px;
-  }
-  .visit .textlink {
-    align-items: center;
-  }
-  .visit .textlink span {
-    font-size: 30px;
-  }
-  .visit .textlink #our {
+  .menu .head p {
     font-size: 12px;
-    text-align: center;
   }
-  .visit .textlink #at {
-    font-size: 10px;
-    text-align: center;
-  }
-  .visit .textlink a {
-    font-size: 10px;
-    padding: 0.5rem;
-    width: 20%;
-  }
-  .authentic .percs {
+  .menu .link {
     flex-direction: column;
   }
-  .authentic .percs #cuisine #bar {
-    font-size: 20px;
+  .menu .link a {
+    font-size: 12px;
+    padding: 0.4rem 1.5rem;
   }
-  .authentic .percs #cuisine #cuise {
-    font-size: 20px;
+  .dishes .first-row {
+    flex-direction: column;
   }
-  .authentic .percs #cuisine #cuise #tech {
-    font-size: 13px;
+  .dishes .second-row {
+    flex-direction: column;
   }
-  .guest {
+  .delivery {
     flex-direction: column;
     gap: 2rem;
   }
-  .guest img {
-    width: 290px;
-  }
-  .guest .texts #info span {
-    font-size: 30px;
+  .delivery .text {
+    margin: 0;
+    align-items: center;
     text-align: center;
   }
-  .guest .texts #info p {
-    font-size: 11px;
+  .delivery .text p {
     text-align: center;
   }
-  .guest .texts #about #first #no {
-    padding: 2rem;
+  .delivery .apps #row-one a img {
+    width: 100px;
   }
-  .guest .texts #about #second #no {
-    padding: 1.5rem;
+  .delivery .apps #row-two a img {
+    width: 120px;
   }
-  .customers {
-    gap: 1rem;
-  }
-  .customers #cus {
-    font-size: 30px;
-    text-align: center;
-  }
-  .customers .review {
-    flex-direction: column;
+  .delivery .apps #row-three a img {
+    width: 100px;
   }
   .footer #copy {
     font-size: 10px;
@@ -510,4 +439,4 @@ body {
   .footer .heading .textimage img {
     width: 120px;
   }
-}/*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=menu.css.map */
