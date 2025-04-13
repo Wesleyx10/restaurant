@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="book.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -23,11 +23,11 @@
     <div class="nav">
       <img src="images/logo.png" alt="" />
       <div class="links">
-        <a href="index.html">Home</a>
+        <a id="hm" href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="menu.html">Menu</a>
         <a href="pages.html">Pages</a>
-        <a id="hm" href="">Contact</a>
+        <a href="contact.html">Contact</a>
       </div>
       <a href="book.html" id="book">Book Table</a>
       <div class="bars">
@@ -35,56 +35,56 @@
         <i id="close" class="fa-solid fa-xmark"></i>
       </div>
     </div>
-    <div class="contact">
+    <div class="book">
       <div class="text">
-        <span>Contact Us</span>
+        <span>Book A Table</span>
         <p>
-          Have a question, comment or review? <br />Send us a message and we'll
-          get back to you as soon as we can
+          Reserve your spot now and let us treat you to an unforgettable dining
+          experience.
         </p>
       </div>
       <div class="input">
-        <div id="nameemail">
+        <div id="calendar">
+          <div id="date">
+            <label for="date">Date</label>
+            <input type="date" />
+          </div>
+          <div id="time">
+            <label for="time">Time</label>
+            <input type="time" />
+          </div>
+        </div>
+        <div id="nameno">
           <div id="name">
             <label for="name">Name</label>
             <input type="text" placeholder="Enter your name" />
           </div>
-          <div id="email">
-            <label for="email">Email</label>
-            <input type="email" placeholder="Enter email address" />
+          <div id="phone">
+            <label for="phone">Name</label>
+            <input type="phone" placeholder="x-xxx-xxx-xxxx" />
           </div>
         </div>
-        <div id="subject">
-          <label for="sub">Subject</label>
-          <input type="text" placeholder="Write a subject" />
+        <div id="person">
+          <label for="person">Total Person</label>
+          <select name="person" id="person">
+            <option value="" selected disabled>Pick an option</option>
+            <option value="0-4">0-4</option>
+            <option value="5-10">5-10</option>
+            <option value="11-15">11-15</option>
+          </select>
         </div>
-        <div id="message">
-          <label for="message">Message</label>
-          <textarea
-            name="message"
-            id=""
-            placeholder="Write a message"
-          ></textarea>
-        </div>
-        <button>Send</button>
+        <button>Book A Table</button>
       </div>
     </div>
-    <div class="text">
-      <div id="call">
-        <span>Call Us:</span>
-        <p>+1-234-567-8900</p>
-      </div>
-      <div id="hours">
-        <span>Hours:</span>
-        <p>Mon-Fri: 11am - 8pm <br />Sat, Sun: 9am - 10pm</p>
-      </div>
-      <div id="location">
-        <span>Our Location:</span>
-        <p>
-          123 Bridge Street <br />Nowhere Land, LA 12345 <br />United States
-        </p>
-      </div>
-    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.6736008655876!2d-118.21991349047602!3d34.05224287304497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c6129c6b0c45%3A0xe2d4bbb0819df265!2sBridge%20St%2C%20Los%20Angeles%2C%20CA%2090033%2C%20USA!5e0!3m2!1sen!2sng!4v1744505269177!5m2!1sen!2sng"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
     <div class="footer">
       <div class="heading">
         <div class="first">
@@ -138,6 +138,6 @@
         >Copyright © 2023 Hashtag Developer. All Rights Reserved</span
       >
     </div>
-    <script src="contact.js"></script>
+    <script src="book.js"></script>
   </body>
 </html>
