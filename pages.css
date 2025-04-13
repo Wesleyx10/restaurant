@@ -333,23 +333,23 @@ body {
   .articles .third-row {
     flex-direction: column;
   }
-}
-.footer #copy {
-  font-size: 10px;
-}
-.footer .heading {
-  flex-direction: column;
-  gap: 2rem;
-}
-.footer .heading .utility {
-  display: none;
-}
-.footer .heading .first img {
-  width: 180px;
-}
-.footer .heading .first .logos {
-  font-size: 12px;
-}
-.footer .heading .textimage img {
-  width: 120px;
+  .footer #copy {
+    font-size: 10px;
+  }
+  .footer .heading {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer .heading .utility {
+    display: none;
+  }
+  .footer .heading .first img {
+    width: 180px;
+  }
+  .footer .heading .first .logos {
+    font-size: 12px;
+  }
+  .footer .heading .textimage img {
+    width: 120px;
+  }
 }/*# sourceMappingURL=pages.css.map */

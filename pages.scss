@@ -332,28 +332,28 @@ body {
       flex-direction: column;
     }
   }
-}
-.footer {
-  #copy {
-    font-size: 10px;
-  }
-  .heading {
-    flex-direction: column;
-    gap: 2rem;
-    .utility {
-      display: none;
+  .footer {
+    #copy {
+      font-size: 10px;
     }
-    .first {
-      img {
-        width: 180px;
+    .heading {
+      flex-direction: column;
+      gap: 2rem;
+      .utility {
+        display: none;
       }
-      .logos {
-        font-size: 12px;
+      .first {
+        img {
+          width: 180px;
+        }
+        .logos {
+          font-size: 12px;
+        }
       }
-    }
-    .textimage {
-      img {
-        width: 120px;
+      .textimage {
+        img {
+          width: 120px;
+        }
       }
     }
   }
