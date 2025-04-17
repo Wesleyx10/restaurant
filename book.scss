@@ -50,25 +50,19 @@ body {
       font-size: 18px;
     }
     #hm {
-      background-color: #dbdfd0;
+      background-color: var(--main-color);
       padding: 5px 14px;
       border-radius: 20px;
     }
   }
   #book {
-    border: 2px solid black;
     padding: 10px 18px;
     border-radius: 30px;
     font-size: 18px;
     text-decoration: none;
-    color: black;
-    font-family: var(--main-font);
-  }
-  #book:hover {
-    transition: all 0.5s;
-    background-color: var(--main-color);
     color: white;
-    border: none;
+    font-family: var(--main-font);
+    background-color: var(--main-color);
   }
 }
 .book {
@@ -355,6 +349,16 @@ iframe {
 
       #calendar {
         flex-direction: column;
+        #date {
+          input {
+            padding-right: 1rem;
+          }
+        }
+        #time {
+          input {
+            padding-right: 1rem;
+          }
+        }
       }
       #nameno {
         flex-direction: column;

@@ -23,7 +23,7 @@
     <div class="nav">
       <img src="images/logo.png" alt="" />
       <div class="links">
-        <a id="hm" href="index.html">Home</a>
+        <a  href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="menu.html">Menu</a>
         <a href="pages.html">Pages</a>
@@ -47,33 +47,33 @@
         <div id="calendar">
           <div id="date">
             <label for="date">Date</label>
-            <input type="date" />
+            <input id="dates" type="date" />
           </div>
           <div id="time">
             <label for="time">Time</label>
-            <input type="time" />
+            <input id="times" type="time" />
           </div>
         </div>
         <div id="nameno">
           <div id="name">
             <label for="name">Name</label>
-            <input type="text" placeholder="Enter your name" />
+            <input id="names" type="text" placeholder="Enter your name" />
           </div>
           <div id="phone">
             <label for="phone">Number</label>
-            <input type="phone" placeholder="x-xxx-xxx-xxxx" />
+            <input id="phoneno" type="phone" placeholder="x-xxx-xxx-xxxx" />
           </div>
         </div>
         <div id="person">
           <label for="person">Total Person</label>
-          <select name="person" id="person">
+          <select name="person" id="persons">
             <option value="" selected disabled>Pick an option</option>
             <option value="0-4">0-4</option>
             <option value="5-10">5-10</option>
             <option value="11-15">11-15</option>
           </select>
         </div>
-        <button>Book A Table</button>
+        <button id="booktable">Book A Table</button>
       </div>
     </div>
     <iframe
@@ -139,5 +139,6 @@
       >
     </div>
     <script src="book.js"></script>
+    <script type="module" src="auth.js"></script>
   </body>
 </html>
